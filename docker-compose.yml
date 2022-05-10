@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   symfony-apache-php81:
-    image: symfony-apache-php81:dev
-    container_name: symfony-apache-php81
+    image: symfony-barta:dev
+    container_name: symfony-barta
     build:
       context: ./docker
       dockerfile: ./Dockerfile.dev
