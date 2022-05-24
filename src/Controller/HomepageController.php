@@ -19,4 +19,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomepageController extends BaseController
 {
+
+
 }
