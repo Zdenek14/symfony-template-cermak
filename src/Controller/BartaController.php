@@ -15,6 +15,7 @@ use Symfony\Component\Form\FormBuilder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use layout\spacelab;
 
 class BartaController extends BaseController
 {
@@ -60,6 +61,19 @@ class BartaController extends BaseController
 
         // preda data do sablony
         return $this->render("Homepage/detail.html.twig");
+    }
+
+    /**
+     * @return Response
+     * @Route("/spacelab", name="homepage_detail")
+     */
+    public function spacelab(): Response
+    {
+
+        // preda data do sablony
+        return $this->render("Homepage/spacelab.html.twig");
+        return $this->setLayout("index.html");
+
     }
 
 
