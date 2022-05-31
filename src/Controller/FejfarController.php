@@ -27,10 +27,10 @@ class FejfarController extends BaseController
     {
 
         // preda data do sablony
-        return $this->render("Homepage/default.html.twig");
+        return $this->render("Homepage/default.html.twig", array('layoutName' => $this->getParameter('layout').'.html.twig'));
     }
 
-    /**
+    /**2
      * @return Response
      * @Route("/add", name="homepage_add")
      */

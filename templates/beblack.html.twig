@@ -11,6 +11,9 @@
 <link rel="stylesheet" type="text/css" href="{{ url("homepage_default") }}layouts/{{ layout }}/css/theme.css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+{% block header %}
+    {% include "header.html.twig" %}
+{% endblock %}
 <body>
 <div class="wrapper">
     <main>
@@ -287,6 +290,10 @@
         </section>
     </main>
 </div>
+
+{% block footer %}
+    {% include "footer.html.twig" %}
+{% endblock %}
 
 <div class="row secondary-footer">
     <div class="col-md">
