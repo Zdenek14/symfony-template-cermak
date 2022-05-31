@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   symfony-apache-php81:
-    image: symfony-barta:dev
-    container_name: symfony-barta
+    image: symfony-fejfar:dev
+    container_name: symfony-fejfar
     build:
       context: ./docker
       dockerfile: ./Dockerfile.dev
